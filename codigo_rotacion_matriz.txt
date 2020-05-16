@@ -1,0 +1,29 @@
+from pandas import *
+import numpy as np
+
+v_tab = np.array([['a', 'b', 'c'],
+                  ['d', 'e', 'f'],
+                  ['g', 'h', 'i']])
+
+print (DataFrame(v_tab))
+print ()
+print ('Tabla al revés')
+print (np.fliplr(v_tab))
+print ()
+print ('Tabla bocabajo')
+print (np.flipud(v_tab))
+print ()
+print ('Tabla bocabajo y al revés')
+print (np.fliplr(np.flipud(v_tab)))
+print ()
+print ('Tabla rotación 90º sentido antihorario')
+print (np.rot90(v_tab))
+print ()
+print ('Tabla rotación 90º sentido horario')
+print (np.fliplr(np.flipud(np.rot90(v_tab))))
+print ()
+print ('Tabla ordenada por columnas')
+print (np.flipud(np.rot90(v_tab)))
+print ()
+print ('Tabla rotación 90º sentido antihorario al revés')
+print (np.fliplr(np.rot90(v_tab)))
